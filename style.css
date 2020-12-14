@@ -5,13 +5,28 @@ body {
   color: #9f9;
   font-family: monospace;
 }
-
+.container {
+}
+.nav-list {
+  display: inline-block;
+}
 h1 {
   font-size: 2em;
   padding: 1em;
 }
 p,
+a,
+li {
+  font-size: 1.4em;
+  line-height: 1.6em;
+}
+li {
+  list-style-type: none;
+}
 a {
-  font-size: 1.2em;
-  line-height: 1.4em;
+  color: #2f2;
+}
+a:hover {
+  color: black;
+  background-color: #2f2;
 }
