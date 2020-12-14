@@ -1,18 +1,49 @@
+@media only screen and (max-width: 600px) {
+  body {
+    max-width: 80%;
+  }
+  .container {
+    flex: 0 1 100vw;
+  }
+  img {
+    max-width: 30%;
+    max-height: 30%;
+  }
+}
+@media only screen and (min-width: 601px) {
+  body {
+    max-width: 50%;
+  }
+  .container {
+    flex: 0 1 50vw;
+    justify-content: space-between;
+    padding-left: 1vw;
+  }
+  .nav-bar {
+    position: fixed;
+    background-color: black;
+    justify-content: top;
+    top: 0px;
+    left: 0px;
+    width: 300px;
+    height: 100%;
+  }
+  img {
+    max-width: 50%;
+    max-height: 50%;
+  }
+}
 body {
-  max-width: 50%;
   margin: 0 auto;
   background-color: black;
   color: #9f9;
   font-family: monospace;
-}
-.container {
 }
 .nav-list {
   display: inline-block;
 }
 h1 {
   font-size: 2em;
-  padding: 1em;
 }
 p,
 a,
