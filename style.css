@@ -5,6 +5,9 @@
   .container {
     flex: 0 1 100vw;
   }
+  .nav-bar {
+    margin-left: -10%;
+  }
   img {
     max-width: 70%;
     max-height: 70%;
@@ -33,6 +36,11 @@
   img {
     max-width: 50%;
     max-height: 50%;
+  }
+  a {
+    border: 0.06em solid #2f2;
+    border-radius: 1em;
+    text-decoration: none;
   }
   a:hover {
     color: black;
