@@ -80,3 +80,10 @@ a {
 a:active {
   color: #fff;
 }
+input {
+  font-family: monospace;
+  color: #9f9;
+  background-color: #000;
+  outline: none;
+  font-size: 1.5em;
+}

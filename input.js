@@ -16,7 +16,7 @@ input.addEventListener('keyup', function (e) {
             re = "Prompt Says...";
             if (valv.includes("/commands"))
             {
-                re = re + "<br>--> .add , use to add numbers";
+                re = re + "<br>--> .clear , use to clear the prompt";
             }
             else if (valv.includes("/info"))
             {
@@ -27,11 +27,22 @@ input.addEventListener('keyup', function (e) {
                 re = re + "<br>use .help/commands for syntax on commands<br>use .help/info for more information on using this prompt"
             }
         }
+        if (valv.includes(".clear"))
+        {
+            re = ".clear";
+        }
         return (re);
     }
     // Make a new timeout set to go off in 1000ms (1 second)
     timeout = setTimeout(function () {
-        document.getElementById("demo").innerHTML = document.getElementById("demo").innerHTML + "->" + interpInput(input.value) + "<br>";
+        out = interpInput(input.value);
+        if (out != ".clear")
+        {
+            document.getElementById("demo").innerHTML = document.getElementById("demo").innerHTML + "->" + out + "<br>";
+        }
+        else {
+            document.getElementById("demo").innerHTML = " ";
+        }
         input.value = "";
     }, 1000);
 });
