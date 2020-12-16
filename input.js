@@ -16,7 +16,7 @@ input.addEventListener('keyup', function (e) {
             re = "Prompt Says...";
             if (valv.includes("/commands"))
             {
-                re = re + "<br>--> .clear , use to clear the prompt";
+                re = re + "<br>--> .clear , use to clear the prompt<br>--> .goats , show my goats off";
             }
             else if (valv.includes("/info"))
             {
@@ -30,6 +30,17 @@ input.addEventListener('keyup', function (e) {
         if (valv.includes(".clear"))
         {
             re = ".clear";
+        }
+        if (valv.includes(".goats"))
+        {
+            re = "My goats:"
+            var goats = ["Sweetie", "Lily", "Sissy", "Chloe", "Adam", "Eve", "Trixie", 
+                    "Dixie", "Rabbit", "Maggie", "Dakota", "Dusty", "Tiny", "Rex",
+                    "Ellie", "Jet", "Noel", "Midnight", "Max"];
+            for (i = 0; i < 19; i++)
+            {
+                re = re + "<br>" + goats[i];
+            }
         }
         return (re);
     }
