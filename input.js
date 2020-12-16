@@ -17,6 +17,9 @@ input.addEventListener('keyup', function (e) {
             if (valv.includes("/commands"))
             {
                 re = re + "<br>--> .clear , use to clear the prompt<br>--> .goats , show my goats off";
+                re = re + "<br>--> .destiny , use to show the basics of Destiny 2";
+                re = re + "<br>--> .give_me_cake";
+                re = re + "<br>--> .skcm";
             }
             else if (valv.includes("/info"))
             {
@@ -41,6 +44,34 @@ input.addEventListener('keyup', function (e) {
             {
                 re = re + "<br>" + goats[i];
             }
+        }
+        if (valv.includes(".destiny"))
+        {
+            re = "Bryce says...";
+            if (valv.includes("/classes"))
+            {
+                re = re + "<br>The three classes are Titan, Warlock, and Hunter";
+            }
+            else if (valv.includes("/sub_classes"))
+            {
+                re = re + "<br>The sub classes are Void, Arc, Solar, and Stasis";
+            }
+            else if (valv.includes("/guardians"))
+            {
+                re = re + "<br>The main task of the Guardians is to defend the Traveler, their source of power";
+            }
+            else
+            {
+                re = re + "<br>The Traveler is important to the Guardians!<br>--> .destiny/classes , for class information<br>--> .destiny/sub_classes , for subclass information<br>--> .destiny/guardians , for information on Guardians";
+            }
+        }
+        if (valv.includes(".give_me_cake"))
+        {
+            re = "The Cake is a lie";
+        }
+        if (valv.includes(".skcm"))
+        {
+            re = "Stardust Kingdoms: Crying Moon is my game! Go to it in my projects tab!";
         }
         return (re);
     }
