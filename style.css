@@ -6,7 +6,26 @@
     flex: 0 1 100vw;
   }
   .nav-bar {
-    margin-left: -10%;
+    position: fixed;
+    margin-left: 0px;
+    justify-content: left;
+    top: -2vh;
+    left: -10vw;
+    width: 100vw;
+    background-color: #000;
+  }
+  /*.nav-list {
+    background-color: #000;
+    background-attachment: scroll;
+  }*/
+  h1 {
+    padding-top: 2em;
+  }
+  p,
+  a,
+  li {
+    font-size: 1em;
+    line-height: 1em;
   }
   img {
     max-width: 70%;
@@ -14,7 +33,14 @@
   }
 }
 @media only screen and (min-width: 901px) {
+  p,
+  a,
+  li {
+    font-size: 1.5em;
+    line-height: 1.6em;
+  }
   body {
+    margin: 0 auto;
     max-width: 50%;
   }
   .container {
@@ -44,7 +70,6 @@ img {
   border-radius: 2em;
 }
 body {
-  margin: 0 auto;
   background-color: black;
   color: #9f9;
   font-family: monospace;
