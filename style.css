@@ -91,6 +91,7 @@ h1 {
 }
 li {
   list-style-type: none;
+  padding-bottom: 1em;
 }
 a {
   color: #9f9;
