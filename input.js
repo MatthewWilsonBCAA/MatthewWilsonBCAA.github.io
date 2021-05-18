@@ -11,7 +11,7 @@ input.addEventListener('keyup', function (e) {
     // if it has been less than <MILLISECONDS>
     clearTimeout(timeout);
     function interpInput(valv) {
-        window.scrollBy(0, 100);
+        window.scrollBy(0, 2000);
         re = "'" + valv + "'";
         if (valv.includes(".help")) {
             re = "Prompt Says...";
